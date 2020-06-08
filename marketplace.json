@@ -30,7 +30,7 @@
   "auxiliary_projects": [
     {
       "git_uri": "git://github.com/looker/block-google-ads-config.git",
-      "git_ref": "bc0e792e5432d8ae41cc00b894eebcb1efdb9fac",
+      "git_ref": "dc45775e459a0dc9ddb055522fbe2b43a93224a5",
       "label": "Google Adwords Config",
       "constant_name": "CONFIG_PROJECT_NAME"
     }

@@ -1,4 +1,4 @@
-project_name: "block-google-ads"
+project_name: "block-google-ads-transfer"
 
 # Library of common ad metrics definitions and date periods
 remote_dependency: app-marketing-common {
@@ -7,8 +7,8 @@ remote_dependency: app-marketing-common {
 }
 
 remote_dependency: app-marketing-google-ads-adapter {
-  url: "git://github.com/looker/app-marketing-google-ads-fivetran-bigquery"
-  ref: "9d03ac068dd377cfe12224f843c9d3f699209db7"
+  url: "git://github.com/looker/app-marketing-google-ads-transfer-bigquery"
+  ref: "372c25112eb5717c376f702c91b124e39c0e27fc"
 }
 
 remote_dependency: app-marketing-google-ads {
@@ -20,20 +20,29 @@ local_dependency: {
   project: "@{CONFIG_PROJECT_NAME}"
   override_constant: ADWORDS_SCHEMA {
     value: "@{ADWORDS_SCHEMA}"
+  }
+    override_constant: ADWORDS_CUSTOMER_ID {
+      value: "@{ADWORDS_CUSTOMER_ID}"
 }
+
 }
 
 constant: CONFIG_PROJECT_NAME {
-  value: "block-google-ads-config"
+  value: "block-google-ads-transfer-config"
   export: override_required
 }
 
 constant: CONNECTION_NAME {
-  value: "looker_app_2"
+  value: "looker_application"
   export: override_required
 }
 
 constant: ADWORDS_SCHEMA {
-  value: "adwords_generated_2"
+  value: "adwords_v201609"
+  export: override_required
+}
+
+constant: ADWORDS_CUSTOMER_ID {
+  value: "6747157124"
   export: override_required
 }
