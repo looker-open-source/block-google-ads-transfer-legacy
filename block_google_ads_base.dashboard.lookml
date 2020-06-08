@@ -13,7 +13,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters:
     - Period
@@ -25,7 +25,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters:
     - Period
@@ -38,7 +38,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters:
     - Period
@@ -52,7 +52,7 @@
     default_value: 28 day
     allow_multiple_values: false
     required: true
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters: []
     field: fact.period
@@ -62,7 +62,7 @@
     default_value: 'Yes'
     allow_multiple_values: false
     required: true
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters: []
     field: fact.date_period_latest

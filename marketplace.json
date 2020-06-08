@@ -14,6 +14,9 @@
     "ADWORDS_SCHEMA": {
       "label": "Google Schema Name"
     },
+    "ADWORDS_CUSTOMER_ID": {
+    "label": "Customer ID from Adwords"
+    },
     "CONFIG_PROJECT_NAME": {
       "label": "Config Project Name"
     }

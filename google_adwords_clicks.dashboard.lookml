@@ -4,7 +4,7 @@
   elements:
   - title: Clicks by Network
     name: Clicks by Network
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: ad_impressions_ad_group
     type: looker_bar
     fields: [fact.ad_network_type, fact.total_clicks]
@@ -62,7 +62,7 @@
     height: 5
   - title: Clicks by Device
     name: Clicks by Device
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: ad_impressions_ad_group
     type: looker_bar
     fields: [fact.device_type, fact.total_clicks]
@@ -121,7 +121,7 @@
     height: 5
   - title: Clicks by Bid Strategy
     name: Clicks by Bid Strategy
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: ad_impressions_keyword
     type: looker_bar
     fields: [keyword.bidding_strategy_type, fact.total_clicks]
@@ -180,7 +180,7 @@
     height: 5
   - title: Clicks By State
     name: Clicks By State
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: ad_impressions_geo
     type: looker_map
     fields: [geo_us_state.state, fact.total_clicks]
@@ -230,7 +230,7 @@
     height: 15
   - title: Clicks by Day of Week and Hour of Day
     name: Clicks by Day of Week and Hour of Day
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: ad_impressions_ad_group_hour
     type: looker_grid
     fields: [fact.hour_of_day, fact.date_day_of_week, fact.total_clicks]
@@ -331,7 +331,7 @@
     height: 14
   - title: Ad Group Clicks Change
     name: Ad Group Clicks Change
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     type: looker_bar
     fields: [ad.creative, ad_group.ad_group_name, campaign.name, fact.total_cost,
@@ -397,7 +397,7 @@
     height: 12
   - title: Keyword Clicks Change
     name: Keyword Clicks Change
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     type: looker_bar
     fields: [ad.creative, ad_group.ad_group_name, campaign.name, fact.total_cost,
@@ -464,7 +464,7 @@
     height: 12
   - title: Ad Clicks Change
     name: Ad Clicks Change
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     type: looker_bar
     fields: [ad.creative, ad_group.ad_group_name, campaign.name, fact.total_cost,
@@ -540,7 +540,7 @@
     height: 12
   - title: Clicks by Hour of Day
     name: Clicks by Hour of Day
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: ad_impressions_ad_group_hour
     type: looker_column
     fields: [fact.hour_of_day, fact.total_clicks]
@@ -624,7 +624,7 @@
     height: 7
   - title: Clicks by Day of Week
     name: Clicks by Day of Week
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     type: looker_bar
     fields: [fact.date_day_of_week, fact.total_clicks]
@@ -710,7 +710,7 @@
     height: 7
   - title: Clicks To Date
     name: Clicks To Date
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     type: looker_column
     fields: [fact.date_period_dynamic_grain, fact.total_conversions, fact.average_cost_per_conversion,
@@ -823,7 +823,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters: [Period, Period Latest]
     field: customer.account_descriptive_name
@@ -833,7 +833,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters: [Period, Period Latest, Account]
     field: campaign.name
@@ -843,7 +843,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters: [Period, Period Latest, Campaign, Account]
     field: ad_group.ad_group_name
@@ -853,7 +853,7 @@
     default_value: 28 day
     allow_multiple_values: false
     required: true
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters: []
     field: fact.period
@@ -863,7 +863,7 @@
     default_value: 'Yes'
     allow_multiple_values: false
     required: true
-    model: block_google_ads
+    model: block_google_ads_transfer
     explore: period_fact
     listens_to_filters: []
     field: fact.date_period_latest
