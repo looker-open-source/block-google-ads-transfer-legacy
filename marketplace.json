@@ -23,14 +23,14 @@
   },
   "models": [
     {
-      "name": "block_google_ads",
+      "name": "block_google_ads_transfer",
       "connection_constant": "CONNECTION_NAME"
     }
   ],
   "auxiliary_projects": [
     {
-      "git_uri": "git://github.com/looker/block-google-ads-config.git",
-      "git_ref": "dc45775e459a0dc9ddb055522fbe2b43a93224a5",
+      "git_uri": "git://github.com/looker/block-google-ads-transfer-config.git",
+      "git_ref": "5886b5d679832f81b597d631f335c2559a37de5f",
       "label": "Google Adwords Config",
       "constant_name": "CONFIG_PROJECT_NAME"
     }
