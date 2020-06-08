@@ -7,7 +7,7 @@ provides in-depth analysis of ad/campaign performance over a given timeframe.
 
 This project is remotely included through the Google Ads Block Config project.
 To pull updates from this project, update the `ref:` parameter in the manifest file. It should point to the latest commit
-in [block-google-ads](https://github.com/looker/block-google-ads/commits/master).
+in [block-google-ads-tarnsfer](https://github.com/looker/block-google-ads-transfer/commits/master).
 
 The LookML constants are used to specify the name of the schema and connection. They are defined in the Google Ads
 Block Config project.
@@ -102,8 +102,7 @@ Targeting Reports
 
 ### Block Info
 
-This Block is modeled on the schema from Fivetrans's [Google AdWords ETL](https://fivetran.com/directory/google-ads).
-
+This Block is modeled on the schema from [Google's BigQuery Data Transfer Service for Google Ads](https://cloud.google.com/bigquery/docs/adwords-transfer).
 The schema documentation for AdWords can be found in [Google's docs](https://developers.google.com/adwords/api/docs/appendix/reports).
 
 ### What if I find an error? Suggestions for improvements?
