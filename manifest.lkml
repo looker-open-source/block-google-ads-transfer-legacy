@@ -43,6 +43,6 @@ constant: GOOGLE_ADS_SCHEMA {
 }
 
 constant: GOOGLE_ADS_CUSTOMER_ID {
-  value: "6747157124"
+  value: "12345"
   export: override_required
 }

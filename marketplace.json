@@ -30,7 +30,7 @@
   "auxiliary_projects": [
     {
       "git_uri": "git://github.com/looker/block-google-ads-transfer-config.git",
-      "git_ref": "635a4f41aa1a4cf959adcbfd4acaf822e6265506",
+      "git_ref": "4394ef5d115264fd119e072008c65011d653142f",
       "label": "Google Ads Config",
       "constant_name": "CONFIG_PROJECT_NAME"
     }
