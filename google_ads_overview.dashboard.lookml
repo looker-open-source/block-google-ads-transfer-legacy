@@ -1,5 +1,5 @@
-- dashboard: adwords_overview
-  title: Google AdWords Overview
+- dashboard: google_ads_overview
+  title: Google Ads Overview
   extends: block_google_ads_base
   elements:
   - title: Conversion Trend
@@ -61,19 +61,19 @@
     y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: left,
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: !!null '',
         type: linear, unpinAxis: false, valueFormat: "$0", series: [{id: fact.average_cost_per_conversion,
-            name: Cost per Conversion, __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
-            __LINE_NUM: 185, axisId: fact.average_cost_per_conversion}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
+            name: Cost per Conversion, __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
+            __LINE_NUM: 185, axisId: fact.average_cost_per_conversion}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
         __LINE_NUM: 173}, {label: '', maxValue: !!null '', minValue: !!null '', orientation: right,
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: !!null '',
         type: linear, unpinAxis: false, valueFormat: 0.0%, series: [{id: fact.average_conversion_rate,
-            name: Conversion Rate, axisId: fact.average_conversion_rate, __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
-            __LINE_NUM: 204}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
+            name: Conversion Rate, axisId: fact.average_conversion_rate, __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
+            __LINE_NUM: 204}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
         __LINE_NUM: 192}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
         orientation: right, showLabels: true, showValues: true, tickDensity: default,
         tickDensityCustom: !!null '', type: linear, unpinAxis: false, valueFormat: '',
         series: [{id: fact.total_conversions, name: Conversions, axisId: fact.total_conversions,
-            __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
-            __LINE_NUM: 223}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
+            __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
+            __LINE_NUM: 223}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
         __LINE_NUM: 211}]
     discontinuous_nulls: false
     focus_on_hover: false
@@ -152,19 +152,19 @@
     y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: left,
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: !!null '',
         type: linear, unpinAxis: false, valueFormat: "$0", series: [{id: fact.average_cost_per_click,
-            name: Cost per Click, __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
-            __LINE_NUM: 528, axisId: fact.average_cost_per_click}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
+            name: Cost per Click, __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
+            __LINE_NUM: 528, axisId: fact.average_cost_per_click}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
         __LINE_NUM: 516}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
         orientation: right, showLabels: true, showValues: true, tickDensity: default,
         tickDensityCustom: !!null '', type: linear, unpinAxis: false, valueFormat: 0.0%,
         series: [{id: fact.average_click_rate, name: Click Through Rate, axisId: fact.average_click_rate,
-            __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
-            __LINE_NUM: 547}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
+            __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
+            __LINE_NUM: 547}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
         __LINE_NUM: 535}, {label: '', maxValue: !!null '', minValue: !!null '', orientation: right,
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: !!null '',
         type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: fact.total_clicks,
-            name: Clicks, axisId: fact.total_clicks, __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
-            __LINE_NUM: 566}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/adwords_overview.dashboard.lookml,
+            name: Clicks, axisId: fact.total_clicks, __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
+            __LINE_NUM: 566}], __FILE: app-marketing-config-3d4d8a33c661890929b121b4e924d117-a68b43c6a8cf419cb1a5c8f0438a929da123891e/google_ads_overview.dashboard.lookml,
         __LINE_NUM: 554}]
     discontinuous_nulls: false
     focus_on_hover: false

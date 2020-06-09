@@ -8,7 +8,7 @@ remote_dependency: app-marketing-common {
 
 remote_dependency: app-marketing-google-ads-adapter {
   url: "git://github.com/looker/app-marketing-google-ads-transfer-bigquery"
-  ref: "372c25112eb5717c376f702c91b124e39c0e27fc"
+  ref: "cd6585b2049e89a4c0a985550e303b9fcaf1bbdd"
 }
 
 remote_dependency: app-marketing-google-ads {
@@ -18,11 +18,11 @@ remote_dependency: app-marketing-google-ads {
 
 local_dependency: {
   project: "@{CONFIG_PROJECT_NAME}"
-  override_constant: ADWORDS_SCHEMA {
-    value: "@{ADWORDS_SCHEMA}"
+  override_constant: GOOGLE_ADS_SCHEMA {
+    value: "@{GOOGLE_ADS_SCHEMA}"
   }
-    override_constant: ADWORDS_CUSTOMER_ID {
-      value: "@{ADWORDS_CUSTOMER_ID}"
+    override_constant: GOOGLE_ADS_CUSTOMER_ID {
+      value: "@{GOOGLE_ADS_CUSTOMER_ID}"
 }
 
 }
@@ -37,12 +37,12 @@ constant: CONNECTION_NAME {
   export: override_required
 }
 
-constant: ADWORDS_SCHEMA {
+constant: GOOGLE_ADS_SCHEMA {
   value: "adwords_v201609"
   export: override_required
 }
 
-constant: ADWORDS_CUSTOMER_ID {
+constant: GOOGLE_ADS_CUSTOMER_ID {
   value: "6747157124"
   export: override_required
 }
